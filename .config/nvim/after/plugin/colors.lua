@@ -13,10 +13,17 @@ vim.cmd "colorscheme tokyonight" ]]
 })
 vim.cmd "colorscheme kanagawa" ]]
 
+
 require("catppuccin").setup({
-  flavor = "mocha",
+  flavour = "mocha", -- latte, frappe, macchiato, mocha
   transparent_background = true,
   no_italic = false,
+  custom_highlights = function ()
+    -- light gray
+    return {
+      CursorLine = { bg = "#292936"},
+    }
+  end,
   integrations = {
     cmp = true,
     gitsigns = true,

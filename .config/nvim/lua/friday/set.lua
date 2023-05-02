@@ -28,8 +28,6 @@ end
 -- set mapleader to space
 vim.g.mapleader = " "
 
-vim.opt.clipboard:append("unnamedplus")
-
 vim.cmd [[set iskeyword+=-]]  -- treats +=- as a word
 
 -- disable continuation of comments to next line

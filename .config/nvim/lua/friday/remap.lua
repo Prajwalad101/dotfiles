@@ -3,18 +3,6 @@ local keymap = vim.keymap.set
 -- Remap space as leader key
 vim.g.mapleader = " "
 
--- Better window navigation
---[[ keymap("n", "<C-[>", "<C-w>h")
-keymap("n", "<C-]>", "<C-w>l")
-keymap("n", "<C-j>", "<C-w>j")
-keymap("n", "<C-k>", "<C-w>k") ]]
-
--- Resize windows
---[[ keymap("n", "<C-Up>", ":resize -2<CR>")
-keymap("n", "<C-Down>", ":resize +2<CR>")
-keymap("n", "<C-Right>", ":vertical resize +2<CR>")
-keymap("n", "<C-Left>", ":vertical resize -2<CR>") ]]
-
 keymap("i", "<C-c>", "<Esc>")
 
 -- Save current buffer
