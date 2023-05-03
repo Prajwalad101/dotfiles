@@ -68,4 +68,7 @@ return require('packer').startup(function(use)
   -- Vim obsession
   use "tpope/vim-obsession"
 
+  -- toggleterm
+  use "akinsho/toggleterm.nvim"
+
 end)
