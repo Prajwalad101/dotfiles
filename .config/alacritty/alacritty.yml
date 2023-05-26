@@ -1,0 +1,36 @@
+import:
+  - ~/.config/alacritty/themes/themes/ayu_dark.yaml
+
+# Font configuration
+font:
+  # Specify the font face
+  size: 13
+  offset:
+    y: 3
+  normal:
+    family: FiraCodeNerdFont
+    style: Regular
+  bold:
+    family: FiraCodeNerdFont
+    style: Bold
+  italic:
+    family: FiraCodeNerdFont
+    style: Italic
+  bold_italic:
+    family: FiraCodeNerdFont
+    style: Bold Italic
+
+# Cursor configuration
+cursor:
+  # Cursor style (block, underline, or beam)
+  style: Block
+
+# Set transparency (0.0 to 1.0, 0.0 is fully transparent, 1.0 is opaque)
+window:
+  opacity: 0.8
+  startup_mode: Fullscreen
+
+# Mouse support
+mouse:
+  # Enable mouse support
+  enabled: true
