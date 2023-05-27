@@ -1,16 +1,15 @@
---[[ Themes Reference
-https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md ]]
-
 local lualine = require("lualine")
 
--- local theme = require 'lualine.themes.nightfly'
-
 lualine.setup({
-  options = {
-  theme = "catppuccin",
-  },
-  sections = {
-    lualine_a = {},
-    lualine_b = {'branch', 'diagnostics'}
-  }
+	options = {
+		theme = "catppuccin",
+	},
+	sections = {
+		lualine_a = { "mode" },
+		lualine_b = { "branch", "diagnostics" },
+		lualine_c = { "filename", "filesize", "windows" },
+		lualine_x = { "encoding", "fileformat", "filetype" },
+		lualine_y = { "progress" },
+		lualine_z = { "location" },
+	},
 })

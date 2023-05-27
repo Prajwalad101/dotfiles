@@ -1,34 +1,42 @@
 import:
-  - ~/.config/alacritty/themes/themes/ayu_dark.yaml
+  # uncomment the flavour you want below:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+ # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+ # - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+ # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+key_bindings:
+  - { key: F11, action: ToggleFullscreen }
+
+mouse:
+  hide_when_typing: true
+
+env:
+  TERM: xterm-256color
 
 # Font configuration
 font:
-  # Specify the font face
-  size: 13
-  offset:
-    y: 3
   normal:
-    family: FiraCodeNerdFont
+    family: Firacode NerdFont
     style: Regular
   bold:
-    family: FiraCodeNerdFont
+    family: Firacode NerdFont
     style: Bold
   italic:
-    family: FiraCodeNerdFont
+    family: Firacode NerdFont
     style: Italic
-  bold_italic:
-    family: FiraCodeNerdFont
-    style: Bold Italic
+  size: 13.0
+  offset:
+    x: 0
+    y: 4
 
 # Cursor configuration
 cursor:
   # Cursor style (block, underline, or beam)
   style: Block
 
-# Set transparency (0.0 to 1.0, 0.0 is fully transparent, 1.0 is opaque)
 window:
-  opacity: 0.8
-  startup_mode: Fullscreen
+  opacity: 0.93
 
 # Mouse support
 mouse:

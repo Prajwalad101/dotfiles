@@ -239,11 +239,6 @@ _G.packer_plugins = {
     path = "/home/friday/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
-  ["vim-obsession"] = {
-    loaded = true,
-    path = "/home/friday/.local/share/nvim/site/pack/packer/start/vim-obsession",
-    url = "https://github.com/tpope/vim-obsession"
-  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/friday/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
