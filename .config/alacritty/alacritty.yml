@@ -36,7 +36,13 @@ cursor:
   style: Block
 
 window:
-  opacity: 0.93
+  opacity: 0.85
+  padding:
+    x: 5
+    y: 0
+  dimensions:
+    columns: 125
+    lines: 30
 
 # Mouse support
 mouse:
