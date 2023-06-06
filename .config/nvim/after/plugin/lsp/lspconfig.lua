@@ -19,24 +19,28 @@ local lsp_flags = {
 	debounce_text_changes = 50,
 }
 
+-- HTML
 lspconfig["html"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
 
+-- TYPESCRIPT
 lspconfig["tsserver"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
 
+-- TAILWINDCSS
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
 
+-- GOLANG
 lspconfig["gopls"].setup({
 	capabilities = capabilities,
 	cmd = { "gopls" },
@@ -54,6 +58,14 @@ lspconfig["gopls"].setup({
 	flags = lsp_flags,
 })
 
+-- PYTHON
+lspconfig["pyright"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	flags = lsp_flags,
+})
+
+-- LUA
 lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,

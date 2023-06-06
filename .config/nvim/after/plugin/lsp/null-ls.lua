@@ -17,11 +17,17 @@ end
 
 null_ls.setup({
 	sources = {
+		-- Javascript
 		formatting.prettierd,
 		diagnostics.eslint_d,
+		-- Golang
 		formatting.gofumpt,
 		formatting.goimports,
 		formatting.golines,
+		-- Python
+		formatting.black,
+		diagnostics.flake8,
+		-- Lua
 		formatting.stylua,
 	},
 	on_attach = function(client, bufnr)
