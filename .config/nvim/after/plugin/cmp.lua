@@ -29,12 +29,25 @@ local kind_icons = {
 	TypeParameter = " ",
 }
 
+local compare = cmp.config.compare
+
 cmp.setup({
 	-- specify a snippet engine
 	snippet = {
 		expand = function(args)
 			require("luasnip").lsp_expand(args.body)
 		end,
+	},
+	sorting = {
+		priority_weight = 2,
+		comparators = {
+			-- Below is the default comparitor list and order for nvim-cmp
+			compare.exact,
+			compare.recently_used,
+			compare.score,
+			compare.locality,
+			compare.kind,
+		},
 	},
 	-- key mappings
 	mapping = cmp.mapping.preset.insert({
@@ -46,10 +59,10 @@ cmp.setup({
 	}),
 	-- sources for the engine (order of precedence)
 	sources = cmp.config.sources({
-		{ name = "nvim_lsp", priority = 1000 },
-		{ name = "luasnip", priority = 750 },
-		{ name = "buffer", priority = 500 },
-		{ name = "path", priority = 250 },
+		{ name = "nvim_lsp" },
+		{ name = "luasnip" },
+		{ name = "buffer" },
+		{ name = "path" },
 	}),
 	window = {
 		completion = cmp.config.window.bordered(),

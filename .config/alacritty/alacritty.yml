@@ -36,7 +36,7 @@ cursor:
   style: Block
 
 window:
-  opacity: 0.85
+  # opacity: 0.85
   padding:
     x: 5
     y: 0
