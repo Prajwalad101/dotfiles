@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
 export EDITOR=nvim
 
 # Uncomment the following line to use case-sensitive completion.
