@@ -1,4 +1,4 @@
-import = ["/home/prajwal.adhikari@tekvortex.local/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = ["/home/prajwal.adhikari@tekvortex.local/.config/alacritty/tokyonight/tokyonight_night.toml"]
 
 [cursor]
 style = "Block"
@@ -37,6 +37,6 @@ columns = 125
 lines = 30
 
 [window.padding]
-x = 5
+x = 0
 y = 0
 

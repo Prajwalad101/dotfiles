@@ -1,16 +1,12 @@
---[[ require("tokyonight").setup({
+require("tokyonight").setup({
   style = "night",
-  transparent = true,
-  styles = {
-    sidebars = "transparent"
-  }
-}) ]]
+})
 
 --[[ require("kanagawa").setup({
 	transparent = true,
 }) ]]
 
-require("catppuccin").setup({
+--[[ require("catppuccin").setup({
 	integrations = {
 		cmp = true,
 		gitsigns = true,
@@ -48,6 +44,6 @@ require("catppuccin").setup({
 			CursorLine = { bg = "#292936" },
 		}
 	end,
-})
+}) ]]
 
 vim.cmd.colorscheme("catppuccin")
