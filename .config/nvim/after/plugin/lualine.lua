@@ -2,7 +2,7 @@ local lualine = require("lualine")
 
 lualine.setup({
 	options = {
-		theme = "catppuccin",
+		theme = "tokyonight",
 	},
 	sections = {
 		lualine_a = { "mode" },

@@ -1,5 +1,5 @@
 require("tokyonight").setup({
-  style = "night",
+	style = "night",
 })
 
 --[[ require("kanagawa").setup({
@@ -46,4 +46,4 @@ require("tokyonight").setup({
 	end,
 }) ]]
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight")
