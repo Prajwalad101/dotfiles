@@ -84,15 +84,10 @@ _G.packer_plugins = {
     path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["bufdelete.nvim"] = {
+  ["barbar.nvim"] = {
     loaded = true,
-    path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/bufdelete.nvim",
-    url = "https://github.com/famiu/bufdelete.nvim"
-  },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
+    path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -238,6 +233,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/prajwal.adhikari@tekvortex.local/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

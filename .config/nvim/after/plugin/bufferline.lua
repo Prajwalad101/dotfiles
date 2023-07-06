@@ -1,15 +1,14 @@
---[[ require("bufferline").setup{
-  options = {
-    -- separator_style = "slant",
-    show_buffer_close_icons = false,
-    show_buffer_icons = false,
-    offsets = {
-      {
-        filetype = "NvimTree",
-        text = "File Explorer",
-        -- highlight = "Directory",
-        -- separator = true -- use a "true" to enable the default, or set your own character
-      }
-    }
-  }
-} ]]
+--[[ require("bufferline").setup({
+	options = {
+		-- show_buffer_close_icons = true,
+		show_buffer_icons = true,
+		diagnostics = "nvim_lsp",
+		separator_style = "line",
+		offsets = {
+			{
+				filetype = "NvimTree",
+				text = "File Explorer",
+			},
+		},
+	},
+}) ]]

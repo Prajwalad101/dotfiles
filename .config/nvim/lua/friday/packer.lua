@@ -30,7 +30,6 @@ return require("packer").startup(function(use)
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
 	use("rafamadriz/friendly-snippets") -- collection of useful snippets
-
 	-- lsp
 	use("neovim/nvim-lspconfig") -- configs for nvim lsp
 	use("williamboman/mason.nvim") -- installer for lsp servers
@@ -40,29 +39,14 @@ return require("packer").startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("numToStr/Comment.nvim")
-
-	-- Git
 	use("lewis6991/gitsigns.nvim")
-
-	-- Status statusline
 	use("nvim-lualine/lualine.nvim")
 	use("windwp/nvim-ts-autotag")
-
-	use("akinsho/bufferline.nvim")
-
-	use("famiu/bufdelete.nvim")
-
 	use("lukas-reineke/indent-blankline.nvim")
-
-	-- Copilot
 	use("github/copilot.vim")
-
-	-- Harpoon
 	use("ThePrimeagen/harpoon")
-
-	-- Trouble
 	use("folke/trouble.nvim")
-
-	-- toggleterm
 	use("akinsho/toggleterm.nvim")
+	use("tpope/vim-fugitive")
+	use("romgrk/barbar.nvim")
 end)
