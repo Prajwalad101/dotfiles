@@ -5,9 +5,6 @@ return require("packer").startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by many plugins
 
-	-- Navigation between tmux and neovim
-	use("christoomey/vim-tmux-navigator")
-
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.1" })
 
 	-- theme

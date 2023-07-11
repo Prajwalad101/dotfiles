@@ -18,6 +18,12 @@ keymap("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
 keymap("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
 keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
+-- Navigate between windows
+keymap("n", "<C-h>", "<C-w>h")
+keymap("n", "<C-j>", "<C-w>j")
+keymap("n", "<C-k>", "<C-w>k")
+keymap("n", "<C-l>", "<C-w>l")
+
 -- Move to previous/next
 keymap("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
 keymap("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
