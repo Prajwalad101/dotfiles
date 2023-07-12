@@ -18,8 +18,8 @@ wk.register({
 		-- trouble
 		x = {
 			name = "trouble",
-			x = { "<cmd>troubletoggle workspace_diagnostics<cr>", "workspace diagnostics" },
-			d = { "<cmd>troubletoggle document_diagnostics<cr>", "document diagnostics" },
+			x = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace diagnostics" },
+			d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document diagnostics" },
 		},
 		-- harpoon
 		h = {
