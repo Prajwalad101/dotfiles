@@ -25,8 +25,8 @@ null_ls.setup({
 		formatting.goimports,
 		formatting.golines,
 		-- Python
-		formatting.black,
 		diagnostics.flake8,
+		formatting.black,
 		-- Lua
 		formatting.stylua,
 	},

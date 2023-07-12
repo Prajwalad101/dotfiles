@@ -36,6 +36,13 @@ return require("packer").startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- make mason work with lspconfig
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 500
+		end,
+	})
 	use("windwp/nvim-autopairs")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("numToStr/Comment.nvim")
