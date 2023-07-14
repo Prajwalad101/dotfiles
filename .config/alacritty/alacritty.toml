@@ -31,13 +31,10 @@ key = "F11"
 
 [window]
 dynamic_title = false
-opacity = 0.93
 
 [window.dimensions]
 columns = 125
 lines = 30
-
 # [window.padding]
 # x = 5
 # y = 5
-

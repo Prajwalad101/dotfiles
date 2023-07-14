@@ -1,3 +1,5 @@
+local ui = require("harpoon.ui")
+
 -- Shorten function name
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
@@ -6,9 +8,25 @@ vim.g.mapleader = " "
 
 keymap("i", "<C-c>", "<Esc>")
 
--- Save current buffer
-keymap("n", "<C-s>", ":w<CR>")
-keymap("n", "<leader>qq", ":q<CR>")
+keymap("n", "<C-a>", "ggVG") -- select all
+keymap("n", "+", "<C-a>") -- increment number
+keymap("n", "-", "<C-x>") -- decrement number
+
+keymap("n", "<C-s>", ":w<CR>", opts) -- write current buffer
+
+-- Harpoon
+keymap("n", "<S-h>", function()
+	ui.nav_file(1)
+end, opts)
+keymap("n", "<T>", function()
+	ui.nav_file(2)
+end, opts)
+keymap("n", "<N>", function()
+	ui.nav_file(3)
+end, opts)
+keymap("n", "<S-s>", function()
+	ui.nav_file(4)
+end, opts)
 
 -- Move Lines
 keymap("n", "<A-j>", "<cmd>m .+1<cr>==", { desc = "Move down" })
@@ -41,11 +59,6 @@ keymap("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
 keymap("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
 keymap("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
 keymap("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
-
---[[ keymap("n", "<S-l>", ":bnext<CR>")
-keymap("n", "<S-h>", ":bprev<CR>")
-keymap("n", "<leader>bs", ":buffers<CR>:buffer ")
-keymap("n", "<leader>bd", ":Bdelete<CR>") ]]
 
 -- Stay in visual mode while indenting
 keymap("v", "<", "<gv")
