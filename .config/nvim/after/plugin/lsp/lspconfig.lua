@@ -31,6 +31,11 @@ lspconfig["tsserver"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
+	init_options = {
+		preferences = {
+			disableSuggestions = true,
+		},
+	},
 })
 
 -- TAILWINDCSS

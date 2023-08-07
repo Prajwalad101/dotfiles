@@ -6,6 +6,7 @@ local options = {
 	shiftwidth = 2,
 	expandtab = true,
 	autoindent = false,
+	smartindent = true,
 	wrap = false,
 	linebreak = true,
 	hlsearch = false,
@@ -19,6 +20,7 @@ local options = {
 	updatetime = 50,
 	colorcolumn = "80",
 	backupcopy = "yes",
+	clipboard = "unnamedplus",
 }
 
 vim.opt.shortmess:append("c")
@@ -30,11 +32,9 @@ end
 -- set mapleader to space
 vim.g.mapleader = " "
 
-vim.cmd([[set iskeyword+=-]]) -- treats +=- as a word
+-- vim.cmd([[set iskeyword+=-]]) -- treats +=- as a word
 
 -- disable continuation of comments to next line
-
--- vim.cmd [[set formatoptions-=o]]
 
 -- create autocmd to disable continuation of comments to next line
 vim.api.nvim_create_autocmd({ "BufRead", "BufWinEnter" }, { pattern = "*", command = "set formatoptions-=cro" })
