@@ -38,6 +38,15 @@ lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
+	settings = {
+		tailwindCSS = {
+			experimental = {
+				classRegex = {
+					{ "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+				},
+			},
+		},
+	},
 })
 
 -- GOLANG

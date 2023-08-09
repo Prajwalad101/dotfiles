@@ -9,8 +9,6 @@ return require("packer").startup(function(use)
 
 	-- theme
 	use("folke/tokyonight.nvim")
-	use("rebelot/kanagawa.nvim")
-	use("catppuccin/nvim")
 
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
@@ -40,6 +38,7 @@ return require("packer").startup(function(use)
 			vim.o.timeoutlen = 500
 		end,
 	})
+	use("christoomey/vim-tmux-navigator")
 	use("windwp/nvim-autopairs")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("numToStr/Comment.nvim")

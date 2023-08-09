@@ -2,6 +2,7 @@ local wk = require("which-key")
 -- Harpoon
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
+local trouble = require("trouble")
 
 local builtin = require("telescope.builtin")
 wk.register({
@@ -18,8 +19,30 @@ wk.register({
 		-- trouble
 		x = {
 			name = "trouble",
-			x = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace diagnostics" },
-			d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document diagnostics" },
+			x = {
+				function()
+					trouble.open("workspace_diagnostics")
+				end,
+				"workspace diagnostics",
+			},
+			d = {
+				function()
+					trouble.open("document_diagnostics")
+				end,
+				"document diagnostics",
+			},
+			q = {
+				function()
+					trouble.open("quickfix")
+				end,
+				"quickfix diagnostics",
+			},
+			l = {
+				function()
+					trouble.open("loclist")
+				end,
+				"loclist diagnostics",
+			},
 		},
 		-- harpoon
 		h = {
