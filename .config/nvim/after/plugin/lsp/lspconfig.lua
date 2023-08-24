@@ -66,6 +66,13 @@ lspconfig["gopls"].setup({
 	flags = lsp_flags,
 })
 
+-- DOCKER
+lspconfig["dockerls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	flags = lsp_flags,
+})
+
 -- PYTHON
 lspconfig["pyright"].setup({
 	capabilities = capabilities,
