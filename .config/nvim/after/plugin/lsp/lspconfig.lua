@@ -43,6 +43,15 @@ lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
+	settings = {
+		tailwindCSS = {
+			experimental = {
+				classRegex = {
+					{ "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+				},
+			},
+		},
+	},
 })
 
 -- GOLANG
@@ -58,6 +67,13 @@ lspconfig["gopls"].setup({
 			},
 		},
 	},
+	on_attach = on_attach,
+	flags = lsp_flags,
+})
+
+-- DOCKER
+lspconfig["dockerls"].setup({
+	capabilities = capabilities,
 	on_attach = on_attach,
 	flags = lsp_flags,
 })

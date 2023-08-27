@@ -5,15 +5,10 @@ return require("packer").startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by many plugins
 
-	-- Navigation between tmux and neovim
-	use("christoomey/vim-tmux-navigator")
-
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.1" })
 
 	-- theme
 	use("folke/tokyonight.nvim")
-	use("rebelot/kanagawa.nvim")
-	use("catppuccin/nvim")
 
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
@@ -43,6 +38,7 @@ return require("packer").startup(function(use)
 			vim.o.timeoutlen = 500
 		end,
 	})
+	use("christoomey/vim-tmux-navigator")
 	use("windwp/nvim-autopairs")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("numToStr/Comment.nvim")

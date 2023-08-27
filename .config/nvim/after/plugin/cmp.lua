@@ -48,16 +48,8 @@ cmp.setup({
 			require("luasnip").lsp_expand(args.body)
 		end,
 	},
-	sorting = {
-		priority_weight = 2,
-		comparators = {
-			-- Below is the default comparitor list and order for nvim-cmp
-			compare.exact,
-			compare.recently_used,
-			compare.score,
-			compare.locality,
-			compare.kind,
-		},
+	performance = {
+		debounce = 200,
 	},
 	-- key mappings
 	mapping = cmp.mapping.preset.insert({
@@ -71,8 +63,8 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
-		{ name = "buffer" },
 		{ name = "path" },
+		{ name = "buffer" },
 	}),
 	window = {
 		completion = cmp.config.window.bordered(),

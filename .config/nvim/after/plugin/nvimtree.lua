@@ -112,10 +112,10 @@ require("nvim-tree").setup({
 			git_placement = "after",
 			glyphs = {
 				folder = {
-					default = "",
-					empty = "",
-					empty_open = "",
-					open = "",
+					default = "󰉋",
+					open = "󰝰",
+					empty = "󰉖",
+					empty_open = "󰷏",
 					symlink = "",
 					symlink_open = "",
 					arrow_open = "",
