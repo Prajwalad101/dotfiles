@@ -11,7 +11,6 @@ local options = {
 	linebreak = true,
 	hlsearch = false,
 	incsearch = true,
-	clipboard = "unnamedplus",
 	breakindent = true,
 	ignorecase = true,
 	termguicolors = true,
