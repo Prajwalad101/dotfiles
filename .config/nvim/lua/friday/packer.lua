@@ -49,7 +49,14 @@ return require("packer").startup(function(use)
 	use("github/copilot.vim")
 	use("ThePrimeagen/harpoon")
 	use("folke/trouble.nvim")
-	use("akinsho/toggleterm.nvim")
 	use("tpope/vim-fugitive")
 	use("romgrk/barbar.nvim")
+
+	-- Theme
+	-- use("ellisonleao/gruvbox.nvim")
+	use("rebelot/kanagawa.nvim")
+
+	-- Debugging
+	use("mfussenegger/nvim-dap")
+	use("leoluz/nvim-dap-go")
 end)

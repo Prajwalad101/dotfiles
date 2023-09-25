@@ -3,6 +3,7 @@ local wk = require("which-key")
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 local trouble = require("trouble")
+local dap = require("dap")
 
 local builtin = require("telescope.builtin")
 wk.register({
@@ -49,6 +50,19 @@ wk.register({
 			name = "harpoon",
 			a = { mark.add_file, "add file" },
 			t = { ui.toggle_quick_menu, "toggle menu" },
+		},
+		-- debugging
+		d = {
+			name = "dap",
+			b = { "<cmd> DapToggleBreakpoint <CR>", "toggle breakpoint" },
+			us = {
+				function()
+					local widgets = require("dap.ui.widgets")
+					local sidebar = widgets.sidebar(widgets.scopes)
+					sidebar.open()
+				end,
+				"open debugging sidebar",
+			},
 		},
 	},
 })

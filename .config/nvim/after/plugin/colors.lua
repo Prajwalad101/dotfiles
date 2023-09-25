@@ -1,11 +1,11 @@
-require("tokyonight").setup({
+--[[ require("tokyonight").setup({
 	style = "night",
 	transparent = true,
-})
-
---[[ require("kanagawa").setup({
-	transparent = true,
 }) ]]
+
+require("kanagawa").setup({
+	-- transparent = true,
+})
 
 --[[ require("catppuccin").setup({
 	integrations = {
@@ -47,4 +47,9 @@ require("tokyonight").setup({
 	end,
 }) ]]
 
-vim.cmd.colorscheme("tokyonight")
+--[[ require("gruvbox").setup({
+	transparent_mode = true,
+}) ]]
+
+-- vim.o.background = "dark"
+vim.cmd.colorscheme("kanagawa")
