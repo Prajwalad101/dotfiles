@@ -25,7 +25,9 @@ null_ls.setup({
 		formatting.goimports,
 		formatting.golines,
 		-- Python
-		diagnostics.flake8,
+		diagnostics.flake8.with({
+			extra_args = { "--ignore=E501" },
+		}),
 		formatting.black,
 		-- Lua
 		formatting.stylua,

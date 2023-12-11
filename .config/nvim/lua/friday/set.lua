@@ -14,6 +14,7 @@ local options = {
 	breakindent = true,
 	ignorecase = true,
 	termguicolors = true,
+	guicursor = "n-v-c-i:block",
 	cursorline = true,
 	scrolloff = 8,
 	signcolumn = "yes",
