@@ -18,8 +18,8 @@ require("nvim-tree").setup({
 		enable = true,
 	},
 	view = {
-		width = 35,
-		adaptive_size = false,
+		width = 40,
+		adaptive_size = true,
 	},
 	renderer = {
 		root_folder_label = false,

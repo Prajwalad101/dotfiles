@@ -46,7 +46,6 @@ return require("packer").startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 	use("windwp/nvim-ts-autotag")
 	use("lukas-reineke/indent-blankline.nvim")
-	use("github/copilot.vim")
 	use("ThePrimeagen/harpoon")
 	use("folke/trouble.nvim")
 	use("tpope/vim-fugitive")
@@ -55,6 +54,9 @@ return require("packer").startup(function(use)
 	-- Theme
 	-- use("ellisonleao/gruvbox.nvim")
 	use("rebelot/kanagawa.nvim")
+
+	-- Code Completions
+	use("github/copilot.vim")
 
 	-- Debugging
 	use("mfussenegger/nvim-dap")
