@@ -3,8 +3,6 @@ local ui = require("harpoon.ui")
 -- Shorten function name
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
--- Remap space as leader key
-vim.g.mapleader = " "
 
 keymap("i", "<C-c>", "<Esc>")
 
